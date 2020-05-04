@@ -1,0 +1,25 @@
+Resumen
+Que es el software: hace referencia a un conjunto de elementos que permiten usar el hardware. Se forma con los programas ejecutables, las bases de datos, y los documentos que describen la operación y el uso de los programas.
+
+Ingenieria de software: su objetivo es obtener software de manera económica, que sea fiable y funcione eficientemente sobre máquinas reales, usando un enfoque sistemático, disciplinado y cuantificable para el desarrollo, operación y mantenimiento del software. Según su propsito se puede clasificar en: disciplinas técnicas, de gestión o de soporte.
+El estudio de enfoques en Pressman lo divide en 4 capas: herramientas, método, proceso y calidad.
+Actividades principales, involucradas en el Desarrollo de Software:
+El factor humano es el principal, se necesita contar con un equipo motivado y colaborativo de las personas adecuadas, social y técnicamente.
+Hay que acordar con precisión que tipo de software quiere el cliente. Y estimar el tiempo y el costo de construcción. Luego hay que diseñarlo y programarlo de la manera mas conveniente. Hay que hacer revisiones técnicas, y una vez completado, el testing. 
+Para hacer cambios es necesario crear mecanismos que nos ayuden a controlar el software a lo largo de su ciclo de vida, protegiendo su integridad, esto se hace con el control de la configuración. Y al mismo tiempo se tiene que realizar un monitoreo y control.
+
+El proceso proporciona un marco de trabajo, una estructura que puede tomarse como referencia para definir el plan que guiará el proyecto para el desarrollo del software. 
+El modelo de proceso/ciclo de vida grafica una descripción del proceso desde una perspectiva particular, indicando fases para el proceso y el orden en el que las mismas se llevarán a cabo. (secuenciales vs iterativos)(Modelo de proceso en Cascada, Modelo de proceso en Cascada con Subproductos , Modelo de Proceso Incremental, Modelo de Proceso Iterativo,etc)
+El proyecto integra personas, utiliza un proceso y herramientas para obtener como resultado un producto de software. Al inicio del proyecto se adaptan a el las actividades del proceso y el ciclo de vida. Entre sus características:
+El proyecto tiene fecha de comienzo y fin al cumplirse los objetivos; resulta en productos, servicios o resultados únicos; es guiado por objetivos claros y alcanzables, y es de elaboración gradual.
+ El termino producto aquí hace referencia al sistema entero, y no sólo al código ejecutable que se entrega al cliente. Un sistema software es la sumatorio de todos los artefactos que se necesitan para representarlo en una forma comprensible para las máquinas, los trabajadores y los interesados.
+
+Una metodología define una forma disciplinada para desarrollar software con el objetivo de hacerlo más predecible y eficiente, incluye modelos de sistemas, reglas, notaciones, sugerencias de diseños y guias de procesos.
+
+El proceso de desarrollo de software  quien hace que, cuando y como se alcanza un objetivo. Sirve de guia para los participantes y el cliente.
+Existen dos procesos de control: el predictivo que asume poder detallar las variables y predecir lo que pasara a largo plazo, este tipo de proceso no aprende no se adapta, en general solo se usan en tareas repetitivas con contextos predecibles.
+En cambio los procesos empíricos de control aceptan que es mucho mas dificil predecir, asi que requiere de una medición y adaptación constante, se predice solo en corto tiempo, de este tipo de proceso surgen las metodologías ágiles.
+
+Con el objetivo de promover los valores y principios de la filosofía ágil y ayudar a las organizaciones en su adopción se creo El Manifiesto Ágil se compone de 4 valores y 12 principios. 
+  Valores :Valorar a las personas y las interacciones entre ellas por sobre los procesos y las herramientas ,Valorar el software funcionando por sobre la documentación detallada ,Valorar la colaboración con el cliente por sobre la negociación de contratos (Se propone que exista una interacción constante entre el cliente y el equipo de desarrollo.),Valorar la respuesta a los cambios por sobre el seguimiento estricto de los planes.
+Los principios también hacen énfasis en satisfacer al cliente por sobre todo, siempre aceptando el cambio, y reforzando la comunicación constante entre los participantes.
