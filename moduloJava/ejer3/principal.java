@@ -35,8 +35,11 @@ public class principal {
        
        System.out.println("multiplicar:  " + c1.multiplicar());
        
-       System.out.println("dividir:  " + c1.dividir());
-  
+         if(c1.dividir()==Float.POSITIVE_INFINITY || c1.dividir()==Float.NEGATIVE_INFINITY){
+            System.out.println("ERROR!");
+        }else{
+            System.out.println("dividir:  " + c1.dividir());
+       
     }
     
 }
