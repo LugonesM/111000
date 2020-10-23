@@ -10,7 +10,7 @@ package com.mvl.supers;
  * @author mel
  */
 public class Malvado extends Supers_x{
-    private int indiceMaldad; 
+    private int indiceMaldad;
 
     public Malvado() {
     }
@@ -29,8 +29,29 @@ public class Malvado extends Supers_x{
         this.indiceMaldad = indiceMaldad;
     }
     
+  
     
-    
-    
-    
+   public int Rayo_violeta(){
+       int rayo_violeta = 3;
+       return rayo_violeta;
+   }
+  
+   
+   public int Rayo_verde(){
+       int rayo_verde = 2;
+       return rayo_verde;
+   }
+   
+   public int Rayo_azul(){
+       int rayo_azul = 4;
+       return rayo_azul;
+   }
+   
+   public int Rayo_rojo(){
+       int rayo_rojo = 1;
+       return rayo_rojo;
+   }
+   
+
+      
 }

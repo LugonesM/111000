@@ -30,6 +30,23 @@ public class Heroe extends Supers_x {
         this.indiceBondad = indiceBondad;
     }
    
+   public int Controla_oxipital(){
+    int controla_oxipital = 4;
+    return controla_oxipital;
+}
+   public int Controla_cerebelo(){
+       int cont_cerebel=3;
+       return cont_cerebel;
+   }
    
+   public int Controla_lobulo_temporal(){
+       int lobulo_temporal = 4;
+       return lobulo_temporal;
+   }
+   
+   public int Lobulo_frontal(){
+       int lobulo_frontal = 5;
+       return lobulo_frontal;
+   }
     
 }

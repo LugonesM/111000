@@ -67,7 +67,7 @@ public class Supers_x {
    
   @Override
    public String toString(){
-       String frase = " Soy " + getNombre() + " me quedan " + getEnergia() + " puntos de Energia";
+       String frase = " Soy " + getNombre() + " me queda " + getEnergia() + " Energia";
        if (this.energia <= 0){
            frase = frase + " He muerto";
        }
