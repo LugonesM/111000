@@ -9,78 +9,60 @@ package com.mvl.supers;
  *
  * @author mel
  */
-public class main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+ public static void main(String[] args) {
        
         Malvado evil = new Malvado(8, 100, "Poh", "Madagascar", "tirar Rayos");
         Heroe hero = new Heroe (10, 100, "Lala", "Vietnam", "Controla la mente");
-        
-                
-        System.out.println("Empieza la pela");
+        System.out.println("Malvado " + evil.getNombre() + " VS heroico " + hero.getNombre());
+        System.out.println("Empiezan las peleas :");
         
         while (evil.getEnergia() > 0 && hero.getEnergia() > 0){
-         
+        
         int poder_malvado;
         int poder_heroe;
         poder_malvado = (int) Math.floor(Math.random() * (4-1+1) + (1));
-        
-          
           switch(poder_malvado) {
-            case 1: 
-                    hero.debilitar(evil.Rayo_violeta());
-                    break;
-            case 2:
-                    hero.debilitar(evil.Rayo_verde());
-                    break;
-            case 3:
-                    hero.debilitar(evil.Rayo_azul());
-                    break;
-            case 4:
-                    hero.debilitar(evil.Rayo_rojo());
-                    break;
+            case 1 -> hero.debilitar(evil.Rayo_violeta());
+            case 2 -> hero.debilitar(evil.Rayo_verde());
+            case 3 -> hero.debilitar(evil.Rayo_azul());
+            case 4 -> hero.debilitar(evil.Rayo_rojo());
           }
-          
+           System.out.println(hero.toString() + System.lineSeparator());
           //**********************************************************//
           
           poder_heroe = (int) Math.floor(Math.random() * (4-1+1) + (1));
           switch(poder_heroe) {
-            case 1: 
-                    evil.debilitar(hero.Controla_oxipital());
-                    break;
-            case 2:
-                    evil.debilitar(hero.Controla_cerebelo());
-                    break;
-            case 3:
-                    evil.debilitar(hero.Controla_lobulo_temporal());
-                    break;
-            case 4:
-                    evil.debilitar(hero.Lobulo_frontal());
-                    break;
+            case 1 -> evil.debilitar(hero.Controla_oxipital());
+            case 2 -> evil.debilitar(hero.Controla_cerebelo());
+            case 3 -> evil.debilitar(hero.Controla_lobulo_temporal());
+            case 4 -> evil.debilitar(hero.Lobulo_frontal());
           }
-          
-          if(evil.getEnergia() < hero.getEnergia()){
-              System.out.println("Gana el malo esta pelea");
+          System.out.println(evil.toString() + System.lineSeparator());
+          if(poder_malvado < poder_heroe){
+              System.out.println("Gana el malo esta pelea" + System.lineSeparator());
           }
-          if(hero.getEnergia() < evil.getEnergia()){
-              System.out.println("Gana el bueno esta pelea");
+          if(poder_heroe < poder_malvado){
+              System.out.println("Gana el bueno esta pelea" + System.lineSeparator());  
+          }
+          if(poder_heroe == poder_malvado){
+              System.out.println("Ambos sufren el mismo daño en esta pelea" + System.lineSeparator());  
           }
           
         }
-          if(evil.getEnergia() < hero.getEnergia()){
-              System.out.println("Gana el malo al final ");
+          if(evil.getEnergia()<=0 && hero.getEnergia()<=0){
+              System.out.println("al final murieron ambos ");
           }
-          if(hero.getEnergia() < evil.getEnergia()){
-              System.out.println("Gana el bueno al final");
-          }
-          if(hero.getEnergia() == evil.getEnergia()){
-              System.out.println("empatan al final");
-          }
+          else{
+            if(evil.getEnergia()<=0 && hero.getEnergia()>=0){
+              System.out.println("murio el malo al final, gana el Heroe");
+            }
+             if(evil.getEnergia()>=0 && hero.getEnergia()<=0){
+              System.out.println("murio el heroe al final, gana el villano");
+             }
+          }   
 
          
     }
     
 }
+
